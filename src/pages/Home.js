@@ -11,7 +11,7 @@ function Home(){
     const [data,setData]=useState([]);
     const [currentPage,setCurrentPage]=useState(0);
     const [totalBlog,setTotalBlog]=useState(null);
-    const [pageLimit]=useState(5);
+    const [pageLimit]=useState(6);
 
 
     const options = ["Laptops","Mobiles"];

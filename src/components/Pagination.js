@@ -17,7 +17,7 @@ const Pagination = ({currentPage, pageLimit, loadBlogsData, data, totalBlog}) =>
                         <MDBPaginationLink>1</MDBPaginationLink>
                     </MDBPaginationItem>
                     <MDBPaginationItem>
-                            <MDBBtn rounded onClick={() => loadBlogsData(4, 8, 1)}>
+                            <MDBBtn rounded onClick={() => loadBlogsData(6, 12, 1)}>
                                 Next
                             </MDBBtn>
                     </MDBPaginationItem>
@@ -32,7 +32,7 @@ const Pagination = ({currentPage, pageLimit, loadBlogsData, data, totalBlog}) =>
             <MDBPagination center className="mb-0">
                     
                     <MDBPaginationItem>
-                            <MDBBtn rounded onClick={() => loadBlogsData((currentPage-1)*5, (currentPage)*5, -1)}>Prev</MDBBtn>
+                            <MDBBtn rounded onClick={() => loadBlogsData((currentPage-1)*6, (currentPage)*6, -1)}>Prev</MDBBtn>
                     </MDBPaginationItem>
 
                     <MDBPaginationItem>
@@ -40,7 +40,7 @@ const Pagination = ({currentPage, pageLimit, loadBlogsData, data, totalBlog}) =>
                     </MDBPaginationItem>
 
                     <MDBPaginationItem>
-                            <MDBBtn rounded onClick={() => loadBlogsData((currentPage+1)*5, (currentPage+2)*5, 1)}>Next</MDBBtn>
+                            <MDBBtn rounded onClick={() => loadBlogsData((currentPage+1)*6, (currentPage+2)*6, 1)}>Next</MDBBtn>
                     </MDBPaginationItem>
 
                 </MDBPagination>)
@@ -50,7 +50,7 @@ const Pagination = ({currentPage, pageLimit, loadBlogsData, data, totalBlog}) =>
                 <MDBPagination center className="mb-0">
                     
                     <MDBPaginationItem>
-                            <MDBBtn rounded onClick={() => loadBlogsData((currentPage-1)*5, (currentPage)*5, -1)}>Prev</MDBBtn>
+                            <MDBBtn rounded onClick={() => loadBlogsData((currentPage-1)*6, (currentPage)*6, -1)}>Prev</MDBBtn>
                     </MDBPaginationItem>
 
                     <MDBPaginationItem>
