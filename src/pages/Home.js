@@ -16,7 +16,7 @@ function Home(){
 
     const options = ["Laptops","Mobiles"];
     useEffect(()=>{
-        loadBlogsData(0, 5, 0);
+        loadBlogsData(0, 6, 0);
     },[]);
 
 const loadBlogsData = async (start, end, increase) => {
