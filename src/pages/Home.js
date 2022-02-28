@@ -30,7 +30,6 @@ const loadBlogsData = async (start, end, increase) => {
             toast.error("Something went wrong!");
         }
 }
-console.log(data)
 
 const excerpt = (str) => {
         if(str.length>40){

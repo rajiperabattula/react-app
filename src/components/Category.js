@@ -3,7 +3,6 @@ import React from 'react';
 import '../scss/home.scss';
 
 const Category = ({handleCategory, options}) => {
-    console.log("options",options);
     return (
         <MDBCard className='category-block'>
             <h4>Categories</h4>

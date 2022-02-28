@@ -2,7 +2,6 @@ import { MDBBtn, MDBPagination, MDBPaginationItem, MDBPaginationLink } from "mdb
 import React from "react";
 
 const Pagination = ({currentPage, pageLimit, loadBlogsData, data, totalBlog}) => {
-    console.log(currentPage,totalBlog, pageLimit)
     const renderPagination = () => {
         // if(
         //     (currentPage === 0 && data.length < 4) || 

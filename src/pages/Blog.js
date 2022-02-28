@@ -52,7 +52,6 @@ function Blog(){
         setRelatedBlog(relatedBlog);
     },[relatedBlog])
 
-    console.log("relatedBlog",relatedBlog)
 
     const excerpt = (str) => {
         if(str.length>100){
