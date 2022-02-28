@@ -8,9 +8,16 @@
     display: flex;
     margin-left: 5px;
     float: right;
+    align-items: center;
     p{
         margin-right: 12px;
+        margin-top: unset !important;
+        margin-bottom: unset !important;
     }
+}
+.loading{
+    text-align: center;
+    margin-top: 200px;
 }
 .go-back{
     float: left;
@@ -21,7 +28,6 @@
 }
 &-image{
     width: 100%;
-    min-height: 600px;
 }
 &-container{
     margin-top: 25px;
@@ -64,4 +70,15 @@
     margin-right: -50%;
 }
 }
+}
+
+.card-container{
+    @media screen and (max-width: 1120px) {
+    max-width: 320px !important;
+    }
+}
+.lead{
+    @media screen and (max-width: 1120px) {
+        font-size: 1rem !important;
+    }
 }

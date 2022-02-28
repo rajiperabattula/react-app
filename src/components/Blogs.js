@@ -12,8 +12,8 @@ import Badge from './Badge';
 
 function Blogs({id,categoryId,description,model,name,price,excerpt}){
     return(
-        <MDBCol size='4'>
-            <MDBCard className='h-80 mt-2 mb-4 card-container'>
+        <MDBCol className='mt-2 mb-4 card-container'>
+            <MDBCard className='h-80'>
                 <MDBCardImage 
                 className='blog-card'
                 src={`../images/blog${id}.jpg`}

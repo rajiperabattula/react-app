@@ -54,13 +54,13 @@ const handleCategory = async (category) => {
         <h2 className='loading'>Loading...</h2>
          :
             <>
-            <MDBRow>
+            <MDBCol>
                 {data.length === 0 && (
                     <MDBTypography className='text-center mb-0' tag='h2'>
                         No Blogs Found
                     </MDBTypography>
                 )}
-                <MDBContainer className='blog-banner'>
+                <div className='blog-banner'>
                     <div className='blog-bg'>
                     <img src='../images/Blog.jpg'/>
                     </div>
@@ -68,10 +68,11 @@ const handleCategory = async (category) => {
                         <h2 className='blog-head'> Blogs</h2>
                         <span className='blog_subHead'>Every time you post something online, you have a choice. You can either make it something that adds to the happiness levels in the world—or you can make it something that takes away</span>
                     </div>
-                </MDBContainer>
+                </div>
+                <MDBRow className='blogs-container'>
                 <MDBCol className='mt-4'>
-                    <MDBContainer>
-                        <MDBRow>
+                    <div className='d-flex flex-wrap g-4'>
+                        <div className='each-card d-flex flex-wrap'>
                             {data.map((item,index) => (
                                 <Blogs 
                                 key={index}
@@ -79,17 +80,18 @@ const handleCategory = async (category) => {
                                 excerpt={excerpt}
                                 />)
                             )}
-                        </MDBRow>
-                    </MDBContainer>
+                        </div>
+                    </div>
                 </MDBCol>
-                <MDBCol size='3' className='mt-5'>
+                <MDBCol size='3' className='mt-5 category-container'>
                 <Category 
                 options={options}
                 handleCategory={handleCategory}
                 />
                 </MDBCol>
-            </MDBRow>
-            <div className='mt-3'>
+                </MDBRow>
+            </MDBCol>
+            <div className='mt-3 mb-5'>
                 <Pagination
                 currentPage={currentPage}
                 loadBlogsData={loadBlogsData}

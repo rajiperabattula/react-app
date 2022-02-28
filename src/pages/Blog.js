@@ -97,12 +97,12 @@ function Blog(){
                 <>
                 {relatedBlog.length >1 && (<h1 className='related-blogs mt-5'>Related Blogs</h1>)}
                 
-                    <MDBRow className='mt-5 row-cols-1 row-cols-md3 g-4'>
+                    <div className='mt-5 g-4 d-flex related-blogs-container flex-wrap'>
                     {relatedBlog
                     .filter((item)=> item.id!=id)
                     .map((item,index)=>{
-                            return <MDBCol size='4'>
-                            <MDBCard className='h-80 mt-2 mb-4 card-container'>
+                            return <MDBCol className='mt-2 mb-4 card-container'>
+                            <MDBCard className='h-80'>
                                 <MDBCardImage 
                                 className='blog-card'
                                 src={`../images/blog${item.id}.jpg`}
@@ -118,13 +118,13 @@ function Blog(){
                             </MDBCard>
                         </MDBCol>
                     })}
-                    </MDBRow>
+                    </div>
                 </>
             )}
         </MDBContainer>
         </> 
         :
-        ""
+        <h2 className='loading'>Loading...</h2>
     )
 }
 
