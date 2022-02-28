@@ -63,9 +63,6 @@ const handleCategory = async (category) => {
                     </MDBTypography>
                 )}
                 <div className='blog-banner'>
-                    <div className='blog-bg'>
-                    <img src='../images/Blog.jpg'/>
-                    </div>
                     <div className='mt-5 banner-content'>
                         <h2 className='blog-head'> Blogs</h2>
                         <span className='blog_subHead'>Every time you post something online, you have a choice. You can either make it something that adds to the happiness levels in the world—or you can make it something that takes away</span>
