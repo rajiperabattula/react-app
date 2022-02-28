@@ -97,7 +97,7 @@ function Blog(){
                 <>
                 {relatedBlog.length >1 && (<h1 className='related-blogs mt-5'>Related Blogs</h1>)}
                 
-                    <div className='mt-5 g-4 d-flex related-blogs-container flex-wrap'>
+                    <div className='mt-5 g-4 d-flex related-blogs-container flex-wrap justify-content-center'>
                     {relatedBlog
                     .filter((item)=> item.id!=id)
                     .map((item,index)=>{
