@@ -1,4 +1,9 @@
 .App {
   text-align: left;
 }
-
+.loading img{
+  max-width: 200px;
+}
+.loading{
+  text-align: center;
+}

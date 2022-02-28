@@ -51,7 +51,10 @@ const handleCategory = async (category) => {
 };
     return(
         data.length === 0 ? 
-        <h2 className='loading'>Loading...</h2>
+        <div class="loading">
+            <img src="../images/load.gif"/>
+            <h4>Loading...</h4>
+        </div>
          :
             <>
             <MDBCol>
