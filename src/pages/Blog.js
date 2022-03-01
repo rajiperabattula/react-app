@@ -123,7 +123,7 @@ function Blog(){
         </MDBContainer>
         </> 
         :
-        <div class="loading">
+        <div className="loading">
             <img src="../images/load.gif"/>
             <h4>Loading...</h4>
         </div>
